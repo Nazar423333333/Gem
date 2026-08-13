@@ -1,247 +1,712 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>П'ять ночей в АТБ — Game Hub</title>
-  <meta name="description" content="Офіційна сторінка гри П'ять ночей в АТБ">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>П'ять ночей в АТБ — ULTRA</title>
+
+    <meta name="description"
+          content="П'ять ночей в АТБ — хорор-гра на виживання. Переживи ніч до 6:00 AM.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="noise"></div>
+    <!-- ============================= -->
+    <!-- VHS / CCTV EFFECTS -->
+    <!-- ============================= -->
 
-  <header class="header">
-    <a href="#" class="logo">
-      <span class="logo-dot"></span>
-      ATB HORROR
-    </a>
+    <div class="scanlines"></div>
+    <div class="static-noise"></div>
+    <div class="vignette"></div>
 
-    <nav>
-      <a href="#about">Про гру</a>
-      <a href="#features">Можливості</a>
-      <a href="#screens">Скріншоти</a>
-      <a href="#requirements">Вимоги</a>
-    </nav>
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
 
-    <a href="#download" class="small-btn">Завантажити</a>
-  </header>
+    <header class="header">
 
-  <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
+        <a href="#home" class="logo">
 
-      <div class="hero-content">
-        <div class="badge">🎮 HORROR SURVIVAL</div>
+            <span class="logo-rec"></span>
 
-        <h1>
-          П'ЯТЬ НОЧЕЙ
-          <span>В АТБ</span>
-        </h1>
+            <div>
+                <strong>ATB</strong>
+                <small>SECURITY SYSTEM</small>
+            </div>
 
-        <p class="hero-text">
-          Переживи п'ять моторошних ночей у магазині.
-          Слідкуй за камерами, бережи енергію та не дай небезпеці дістатися до тебе.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#download" class="primary-btn">⬇ Завантажити гру</a>
-          <button class="secondary-btn" id="trailerBtn">▶ Дивитися трейлер</button>
-        </div>
-
-        <div class="game-info">
-          <div>
-            <span>Жанр</span>
-            <strong>Horror / Survival</strong>
-          </div>
-
-          <div>
-            <span>Платформа</span>
-            <strong>Windows</strong>
-          </div>
-
-          <div>
-            <span>Режим</span>
-            <strong>Single Player</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="camera-label">
-        <span class="rec-dot"></span>
-        CAM 01 — ATB STORE
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="section-title">
-        <span>01</span>
-        <h2>Про гру</h2>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-card big">
-          <h3>Нічна зміна починається</h3>
-          <p>
-            Ти залишаєшся один у темному магазині після закриття.
-            Камери починають фіксувати дивні рухи, світло мерехтить,
-            а запас енергії поступово закінчується.
-          </p>
-
-          <p>
-            Твоє завдання — протриматися до ранку та пережити всі п'ять ночей.
-          </p>
-        </div>
-
-        <div class="stat-card">
-          <span>🌙</span>
-          <strong>5</strong>
-          <p>Ночей</p>
-        </div>
-
-        <div class="stat-card">
-          <span>📹</span>
-          <strong>8+</strong>
-          <p>Камер</p>
-        </div>
-
-        <div class="stat-card">
-          <span>⚡</span>
-          <strong>100%</strong>
-          <p>Енергії</p>
-        </div>
-
-        <div class="stat-card">
-          <span>👁</span>
-          <strong>?</strong>
-          <p>Небезпек</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark-section" id="features">
-      <div class="section-title">
-        <span>02</span>
-        <h2>Можливості</h2>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="icon">📹</div>
-          <h3>Камери спостереження</h3>
-          <p>Перемикайся між камерами та стеж за пересуванням небезпек.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon">⚡</div>
-          <h3>Система енергії</h3>
-          <p>Камери, двері та світло витрачають заряд. Використовуй його розумно.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon">🚪</div>
-          <h3>Двері та світло</h3>
-          <p>Захищай кімнату, але пам'ятай: кожна дія коштує енергії.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon">🌙</div>
-          <h3>П'ять ночей</h3>
-          <p>Кожна наступна ніч стає складнішою та небезпечнішою.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="screens">
-      <div class="section-title">
-        <span>03</span>
-        <h2>Скріншоти</h2>
-      </div>
-
-      <div class="screens-grid">
-        <div class="screen-card">
-          <div class="placeholder">CAM 01</div>
-          <p>Головний зал магазину</p>
-        </div>
-
-        <div class="screen-card">
-          <div class="placeholder">CAM 03</div>
-          <p>Темний коридор</p>
-        </div>
-
-        <div class="screen-card">
-          <div class="placeholder">OFFICE</div>
-          <p>Кімната охорони</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark-section" id="requirements">
-      <div class="section-title">
-        <span>04</span>
-        <h2>Системні вимоги</h2>
-      </div>
-
-      <div class="requirements">
-        <div>
-          <span>ОС</span>
-          <strong>Windows 10 / 11</strong>
-        </div>
-
-        <div>
-          <span>Процесор</span>
-          <strong>Dual Core 2.0 GHz+</strong>
-        </div>
-
-        <div>
-          <span>Оперативна пам'ять</span>
-          <strong>4 GB RAM</strong>
-        </div>
-
-        <div>
-          <span>Відеокарта</span>
-          <strong>DirectX compatible</strong>
-        </div>
-
-        <div>
-          <span>Місце</span>
-          <strong>500 MB+</strong>
-        </div>
-      </div>
-    </section>
-
-    <section class="download-section" id="download">
-      <div class="download-box">
-        <span class="version">VERSION 1.0</span>
-        <h2>Готовий пережити ніч?</h2>
-        <p>Завантажуй гру та спробуй дожити до 6:00 AM.</p>
-
-        <a href="Five_Nights_ATB.exe" class="download-btn" download>
-          ⬇ Завантажити для Windows
         </a>
 
-        <small>Windows 10 / 11 • 64-bit</small>
-      </div>
+        <nav class="nav">
+            <a href="#home">Головна</a>
+            <a href="#story">Історія</a>
+            <a href="#features">Можливості</a>
+            <a href="#nights">Ночі</a>
+            <a href="#gallery">Галерея</a>
+        </nav>
+
+        <a href="#download" class="header-download">
+            СКАЧАТИ
+        </a>
+
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- HERO -->
+    <!-- ============================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-glow"></div>
+
+        <div class="camera-info">
+
+            <div>
+                <span class="rec"></span>
+                REC
+            </div>
+
+            <div>CAM 01</div>
+
+        </div>
+
+
+        <div class="hero-content">
+
+            <div class="warning">
+                ⚠ SECURITY CAMERA ACTIVE
+            </div>
+
+            <h1>
+                П'ЯТЬ НОЧЕЙ
+                <span>В АТБ</span>
+            </h1>
+
+            <p class="subtitle">
+                Магазин закрито.
+                Світло вимкнено.
+                Але ти тут не один.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="play-button" id="playButton">
+                    ▶ ГРАТИ
+                </button>
+
+                <a
+                    href="Five_Nights_ATB.exe"
+                    class="download-button"
+                    download
+                >
+                    ⬇ СКАЧАТИ ГРУ
+                </a>
+
+            </div>
+
+
+            <div class="hero-stats">
+
+                <div>
+                    <small>ЧАС</small>
+                    <strong id="clock">12:00 AM</strong>
+                </div>
+
+                <div>
+                    <small>ЕНЕРГІЯ</small>
+                    <strong id="energy">100%</strong>
+                </div>
+
+                <div>
+                    <small>НІЧ</small>
+                    <strong id="currentNight">1</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="scroll-text">
+            SCROLL ↓
+        </div>
+
     </section>
-  </main>
 
-  <footer>
-    <div class="footer-logo">ATB HORROR</div>
-    <p>© 2026 Game Hub. Fan-made game project.</p>
-  </footer>
 
-  <div class="modal" id="trailerModal">
-    <div class="modal-box">
-      <button class="close-modal" id="closeModal">✕</button>
-      <div class="video-placeholder">
-        <span>▶</span>
-        <h3>Трейлер гри</h3>
-        <p>Сюди можна вставити відео з YouTube.</p>
-      </div>
+    <!-- ============================= -->
+    <!-- STORY -->
+    <!-- ============================= -->
+
+    <section class="section" id="story">
+
+        <div class="section-number">
+            01 / STORY
+        </div>
+
+        <h2>
+            НІЧНА ЗМІНА
+            <span>ПОЧАЛАСЯ</span>
+        </h2>
+
+        <div class="story-grid">
+
+            <div class="story-main">
+
+                <div class="camera-screen">
+
+                    <div class="camera-top">
+
+                        <span>
+                            <i></i>
+                            LIVE
+                        </span>
+
+                        <span>
+                            CAM 02
+                        </span>
+
+                    </div>
+
+                    <div class="camera-center">
+
+                        <div class="camera-icon">
+                            📹
+                        </div>
+
+                        <p>
+                            SIGNAL ACTIVE
+                        </p>
+
+                    </div>
+
+                    <div class="camera-bottom">
+                        2026 / ATB SECURITY
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="story-text">
+
+                <div class="story-line"></div>
+
+                <p>
+                    Ти працюєш нічним охоронцем у магазині.
+                </p>
+
+                <p>
+                    Після закриття система безпеки починає
+                    фіксувати дивні рухи.
+                </p>
+
+                <p>
+                    Камери — твоя головна зброя.
+                    Але кожне використання системи витрачає енергію.
+                </p>
+
+                <p class="important">
+                    Твоя ціль — дожити до
+                    <strong>6:00 AM.</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- FEATURES -->
+    <!-- ============================= -->
+
+    <section class="section section-dark" id="features">
+
+        <div class="section-number">
+            02 / FEATURES
+        </div>
+
+        <h2>
+            СИСТЕМА
+            <span>ВИЖИВАННЯ</span>
+        </h2>
+
+
+        <div class="features">
+
+            <article class="feature">
+
+                <div class="feature-number">
+                    01
+                </div>
+
+                <div class="feature-icon">
+                    📹
+                </div>
+
+                <h3>
+                    CCTV КАМЕРИ
+                </h3>
+
+                <p>
+                    Перемикайся між камерами та контролюй
+                    різні зони магазину.
+                </p>
+
+            </article>
+
+
+            <article class="feature">
+
+                <div class="feature-number">
+                    02
+                </div>
+
+                <div class="feature-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    ЕНЕРГІЯ
+                </h3>
+
+                <p>
+                    Камери, двері та світло використовують
+                    обмежений запас енергії.
+                </p>
+
+            </article>
+
+
+            <article class="feature">
+
+                <div class="feature-number">
+                    03
+                </div>
+
+                <div class="feature-icon">
+                    🚪
+                </div>
+
+                <h3>
+                    ЗАХИСТ
+                </h3>
+
+                <p>
+                    Закривай двері лише тоді,
+                    коли це справді потрібно.
+                </p>
+
+            </article>
+
+
+            <article class="feature">
+
+                <div class="feature-number">
+                    04
+                </div>
+
+                <div class="feature-icon">
+                    🌙
+                </div>
+
+                <h3>
+                    5 НОЧЕЙ
+                </h3>
+
+                <p>
+                    Кожна нова ніч стає
+                    складнішою за попередню.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- NIGHT SELECT -->
+    <!-- ============================= -->
+
+    <section class="section" id="nights">
+
+        <div class="section-number">
+            03 / NIGHT SELECT
+        </div>
+
+        <h2>
+            ОБЕРИ
+            <span>НІЧ</span>
+        </h2>
+
+
+        <div class="night-selector">
+
+            <button class="night-card active" data-night="1">
+
+                <span>
+                    NIGHT
+                </span>
+
+                <strong>
+                    01
+                </strong>
+
+                <small>
+                    EASY
+                </small>
+
+            </button>
+
+
+            <button class="night-card" data-night="2">
+
+                <span>
+                    NIGHT
+                </span>
+
+                <strong>
+                    02
+                </strong>
+
+                <small>
+                    NORMAL
+                </small>
+
+            </button>
+
+
+            <button class="night-card" data-night="3">
+
+                <span>
+                    NIGHT
+                </span>
+
+                <strong>
+                    03
+                </strong>
+
+                <small>
+                    HARD
+                </small>
+
+            </button>
+
+
+            <button class="night-card" data-night="4">
+
+                <span>
+                    NIGHT
+                </span>
+
+                <strong>
+                    04
+                </strong>
+
+                <small>
+                    INSANE
+                </small>
+
+            </button>
+
+
+            <button class="night-card" data-night="5">
+
+                <span>
+                    NIGHT
+                </span>
+
+                <strong>
+                    05
+                </strong>
+
+                <small>
+                    NIGHTMARE
+                </small>
+
+            </button>
+
+        </div>
+
+
+        <div class="night-status">
+
+            <span>
+                SELECTED NIGHT
+            </span>
+
+            <strong id="selectedNightText">
+                NIGHT 01
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- GALLERY -->
+    <!-- ============================= -->
+
+    <section class="section section-dark" id="gallery">
+
+        <div class="section-number">
+            04 / CCTV ARCHIVE
+        </div>
+
+        <h2>
+            SECURITY
+            <span>ARCHIVE</span>
+        </h2>
+
+
+        <div class="gallery">
+
+            <div class="gallery-card">
+
+                <div class="gallery-image cam1">
+
+                    <span>
+                        CAM 01
+                    </span>
+
+                    <strong>
+                        MAIN STORE
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="gallery-card">
+
+                <div class="gallery-image cam2">
+
+                    <span>
+                        CAM 02
+                    </span>
+
+                    <strong>
+                        CORRIDOR
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="gallery-card">
+
+                <div class="gallery-image cam3">
+
+                    <span>
+                        CAM 03
+                    </span>
+
+                    <strong>
+                        STORAGE
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="gallery-card">
+
+                <div class="gallery-image cam4">
+
+                    <span>
+                        CAM 04
+                    </span>
+
+                    <strong>
+                        OFFICE
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- DOWNLOAD -->
+    <!-- ============================= -->
+
+    <section class="download-section" id="download">
+
+        <div class="download-content">
+
+            <div class="download-warning">
+                ⚠ NIGHT SHIFT AVAILABLE
+            </div>
+
+            <h2>
+                ТИ ГОТОВИЙ
+                <span>ДО 6:00 AM?</span>
+            </h2>
+
+            <p>
+                Завантажуй «П'ять ночей в АТБ»
+                та спробуй пережити всі п'ять ночей.
+            </p>
+
+
+            <a
+                href="Five_Nights_ATB.exe"
+                class="mega-download"
+                download
+            >
+                <span>
+                    ⬇
+                </span>
+
+                <div>
+                    <small>
+                        DOWNLOAD FOR
+                    </small>
+
+                    <strong>
+                        WINDOWS
+                    </strong>
+                </div>
+            </a>
+
+
+            <div class="requirements">
+
+                <span>
+                    Windows 10 / 11
+                </span>
+
+                <span>
+                    64-bit
+                </span>
+
+                <span>
+                    Version 1.0
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+    <footer>
+
+        <div>
+            <strong>
+                FIVE NIGHTS IN ATB
+            </strong>
+
+            <p>
+                Fan-made game project
+            </p>
+        </div>
+
+        <span>
+            © 2026
+        </span>
+
+    </footer>
+
+
+    <!-- ============================= -->
+    <!-- GAME MODAL -->
+    <!-- ============================= -->
+
+    <div class="game-modal" id="gameModal">
+
+        <div class="game-window">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+            >
+                ✕
+            </button>
+
+
+            <div class="game-camera">
+
+                <div class="game-camera-header">
+
+                    <span>
+                        <i></i>
+                        REC
+                    </span>
+
+                    <span id="modalNight">
+                        NIGHT 01
+                    </span>
+
+                </div>
+
+
+                <div class="game-center">
+
+                    <p class="system-title">
+                        ATB SECURITY SYSTEM
+                    </p>
+
+                    <div class="big-time">
+                        12:00 AM
+                    </div>
+
+                    <p>
+                        NIGHT SHIFT READY
+                    </p>
+
+
+                    <button
+                        class="start-game"
+                        id="startGame"
+                    >
+                        START NIGHT
+                    </button>
+
+                </div>
+
+
+                <div class="game-camera-footer">
+
+                    <span>
+                        POWER: 100%
+                    </span>
+
+                    <span>
+                        CAM SYSTEM ONLINE
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-  </div>
 
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
